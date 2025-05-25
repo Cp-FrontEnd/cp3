@@ -16,7 +16,7 @@ body, html {
     background-image: url('../assets/homeImage.png');
     background-size: cover;
     background-position: center;
-    filter: brightness(75%);
+    filter: brightness(80%);
 }
 
 
@@ -52,6 +52,7 @@ footer{
     display: flex;
     width: 100%;
     flex-direction: column;
+    align-items: center;
     background-color: black;
     color:white;
 }
@@ -71,15 +72,44 @@ footer{
 }
 #sociais-contato{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
-#sociais-contato div{
+#sociais-contato #sociais{
     display: flex;
     justify-content: center;
+    position:absolute;
     margin-top: 20px;
+    left: 50%;
     gap: 20px;
+    transform: translateX(-50%);
 }
 .icons{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 30px;
+}
+.icons:hover{
+    cursor: pointer;
+}
+#sociais-contato #contatos{
+    width: 200px;
+    height:80px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right:10px;
+    margin-left: auto;
+}
+#sociais-contato #contatos p{
+    font-size: 0.6rem;
+}
+#copy{
+    width: 80%;
+    text-align: center;
+}
+#copy p{
+    font-size: 0.6rem;
 }
