@@ -1,42 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
-*{
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Inknut Antiqua';
+    position: relative;
 }
-body{
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
+
+/* Fundo fixo ou absoluto atrás de tudo */
+.imagem-fundo {
+    position: absolute; /* ou absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1070px;
+    z-index: -1; /* 👈 Faz ela ficar atrás de tudo */
+    background-image: url('../assets/homeImage.png');
+    background-size: cover;
+    background-position: center;
 }
-header{
-    display: flex;
+
+/* Header normal */
+header {
+    position: relative;
     width: 90%;
     height: 70px;
-    background-color: transparent;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    order: 1;
-    z-index: 3;
-    
+    z-index: 1; /* acima do fundo */
 }
 header nav ul{
     list-style: none;
     display: flex;
     gap: 100px;
 }
-header nav ul li a {
+header nav ul li a{
     text-decoration: none;
-    color:#FFEBAA ;
-    font-family:'Inknut Antiqua';
+    color: #FFEBAA;
+    font-family: 'Inknut Antiqua';
 }
-.imagem-fundo{
-    width:100%;
-    height: 993px;
-    position: absolute;
-    order: 0;
-    background-image:url('../assets/homeImage.png');
-    background-size: cover;
-    z-index: 2;
+
+
+#sombra {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    margin-top: 993px; /* mesma altura da imagem de fundo */
+    z-index: 1;
 }
