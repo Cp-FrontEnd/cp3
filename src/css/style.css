@@ -5,6 +5,7 @@ body, html {
     height: 100%;
     font-family: 'Inknut Antiqua';
     position: relative;
+    
 }
 .imagem-fundo {
     position: absolute; 
@@ -29,6 +30,7 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 1; 
+    margin-top: 10px;
 }
 header nav ul{
     list-style: none;
