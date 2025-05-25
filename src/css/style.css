@@ -113,3 +113,11 @@ footer{
 #copy p{
     font-size: 0.6rem;
 }
+@media(max-width:1024px){
+    header nav ul li a{
+        display: none;
+}
+#copy p{
+    font-size: 0.5rem;
+}
+}
