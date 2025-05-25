@@ -86,3 +86,26 @@ header nav ul li a::after{
     font-family: "Inika";
      font-weight: 300;
 }
+
+.hero{
+    margin-top: 50%;
+}
+
+.heromenu {
+    z-index: 10; 
+    justify-content: center;
+    display: flex;
+    gap: 20%; 
+    
+}
+
+.thumbnail{
+    cursor: pointer; 
+    transition: border 0.3s ease, transform 0.3s ease; /* Transições para hover e clique */
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+.thumbnail:hover {
+    border-color: #FFEBAA;
+    transform: scale(1.05); 
+}
