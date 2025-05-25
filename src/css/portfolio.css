@@ -147,8 +147,6 @@ main{
     margin-top:0;
 }
 
-
-
 footer{
     display: flex;
     width: 100%;
@@ -222,4 +220,31 @@ footer{
 #copy p{
     font-size: 0.5rem;
 }
+.prateleira{
+    text-align: center;
+    height: 1280px;
+}
+.produtos{
+    flex-direction: column;
+    align-items: center;
+    height: 1280px;
+}
+main{
+    height: 3480px;
+    justify-content: flex-start;
+}
+footer{
+    margin-top: 4280px;
+    
+}
+.imagem-fundo{
+    height: 4350px;
+}
+#titulo{
+    margin-top: 80px;
+}
+.desc-produto{
+    margin-left: 0;
+}
+
 }
