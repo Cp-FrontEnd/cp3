@@ -37,10 +37,49 @@ header nav ul{
     gap: 100px;
 }
 header nav ul li a{
-    text-decoration: none;
+    text-decoration:none;
     color: #FFEBAA;
     font-family: 'Inknut Antiqua';
+    position: relative;
 }
+a::before,
+a::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border:2px solid #FFEBAA;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: -7px;
+}
+
+a:hover::before,
+a:hover::after{
+    opacity: 1;    
+}
+
+a::before{
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+a::after{
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
 main{
     position: absolute;
     width: 100%;
