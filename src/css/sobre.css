@@ -58,7 +58,6 @@ header nav ul li a:hover::before,
 header nav ul li a:hover::after{
     opacity: 1;    
 }
-
 header nav ul li a::before{
     bottom: 0;
     right: 0;
@@ -88,24 +87,43 @@ header nav ul li a::after{
 }
 
 .hero{
-    margin-top: 50%;
+    position: relative;
+    margin-top: 40%;
+    position: relative; /* Essencial para posicionar a imagem de fundo e o menu */
+    width: 100%; 
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o heromenu na parte inferior */
+    align-items: center;
+    
 }
-
 .heromenu {
     z-index: 10; 
     justify-content: center;
     display: flex;
-    gap: 20%; 
-    
+    gap: 10%; 
 }
-
 .thumbnail{
     cursor: pointer; 
     transition: border 0.3s ease, transform 0.3s ease; /* Transições para hover e clique */
     border: 2px solid transparent;
     border-radius: 30px;
+    
 }
 .thumbnail:hover {
     border-color: #FFEBAA;
     transform: scale(1.05); 
+}
+
+
+#heroback { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Faz a imagem cobrir o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    transition: background-image 0.5s ease-in-out; /* Transição suave na mudança */
+    background-image: url('../assets/livrosbackgroud.png'); 
 }
