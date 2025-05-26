@@ -130,7 +130,27 @@ header nav ul li a::after{
     background-image: url('../assets/livrosbackgroud.png'); 
 }
 
-
+#background-title{
+    color: #FFEBAA;
+    font-size: 1.6rem;
+    opacity: 0;
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#background-text{
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Inika";
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#background-title.visible,
+#background-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
