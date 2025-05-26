@@ -89,13 +89,13 @@ header nav ul li a::after{
 .hero{
     position: relative;
     margin-top: 40%;
-    position: relative; /* Essencial para posicionar a imagem de fundo e o menu */
+    position: relative; 
     width: 100%; 
     height: 100vh;
     
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Alinha o heromenu na parte inferior */
+    justify-content: flex-end; 
     align-items: center;
     
 }
@@ -107,10 +107,12 @@ header nav ul li a::after{
 }
 .thumbnail{
     cursor: pointer; 
-    transition: border 0.3s ease, transform 0.3s ease; /* Transições para hover e clique */
+    transition: border 0.3s ease, transform 0.3s ease; 
     border: 2px solid transparent;
     border-radius: 30px;
-    
+    width: 70%;
+    height: 70%;
+    justify-content: flex-end; 
 }
 .thumbnail:hover {
     border-color: #FFEBAA;
@@ -122,8 +124,90 @@ header nav ul li a::after{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover; /* Faz a imagem cobrir o contêiner */
-    background-position: center; /* Centraliza a imagem */
-    transition: background-image 0.5s ease-in-out; /* Transição suave na mudança */
+    background-size: cover;
+    background-position: center; 
+    transition: background-image 0.5s ease-in-out; 
     background-image: url('../assets/livrosbackgroud.png'); 
+}
+
+
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    margin-top: 1000px;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:white;
+}
+#paginas{
+    width: 100%;
+    border-bottom: solid 3px #424242;
+}
+#paginas div{
+    display: flex;
+    justify-content:left;
+    gap: 20px;
+    margin-left: 120px;
+}
+#paginas div a{
+    text-decoration: none;
+    color: white;
+}
+#sociais-contato{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#sociais-contato #sociais{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    margin-top: 20px;
+    left: 50%;
+    gap: 20px;
+    transform: translateX(-50%);
+}
+.icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+.icons:hover{
+    cursor: pointer;
+}
+#sociais-contato #contatos{
+    width: 200px;
+    height:80px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right:10px;
+    margin-left: auto;
+}
+#sociais-contato #contatos p{
+    font-size: 0.6rem;
+}
+#copy{
+    width: 80%;
+    text-align: center;
+}
+#copy p{
+    font-size: 0.6rem;
+}
+@media(max-width:1024px){
+    header nav ul li a{
+        display: none;
+}
+#copy p{
+    font-size: 0.5rem;
+}
+#form-contato{
+    width: 600px;
+}
 }
