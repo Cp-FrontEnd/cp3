@@ -7,8 +7,8 @@ body, html {
     font-family: 'Inknut Antiqua';
     position: relative;
 
-     background-image: url('../assets/contatoImage.png');
-    background-position: center;
+    background-image: url('../assets/contatoImage.png');
+     background-position: center 590%;
     background-size: 70%;
     background-repeat: no-repeat;
     display: flex;
